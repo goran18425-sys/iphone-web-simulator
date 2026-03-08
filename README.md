@@ -55,4 +55,6 @@ The project simulates a phone with a lock screen, home screen and several workin
 - Managing application state without page reload
 - Building more complex JavaScript logic
 
-## Project Structure
+## Author
+
+Software engineering student at ITS
