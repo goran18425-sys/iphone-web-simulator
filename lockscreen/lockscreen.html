@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <title>LockScreen</title>
+</head>
+<body>
+    <div class="powerBtn" onclick="ukljuci()"></div>
+    <div id="telefon">
+        <div id="island"></div>
+        <div id="ekran">
+            <div class="densa_strana">
+                <img src="../img/signal.png" alt="">
+                <img src="../img/wi-fi.png" alt="">
+                <img src="../img/full-battery.png" alt="">
+            </div>
+            <div id="realTime" class="lockScreen">
+                <p id="datum"></p>
+                <h1 id="vreme"></h1>
+            </div>
+
+            <div id="izadjiLinija"></div>
+        </div>
+    </div>
+    
+    <script src="lockscreen.js"></script>
+    
+</body>
+</html>

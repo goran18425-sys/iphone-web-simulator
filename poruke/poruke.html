@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <title>Poruke</title>
+</head>
+
+<body>
+    <a href="../lockscreen/lockscreen.html"><div class="powerBtn" onclick="ukljuci()"></div></a>
+    <div id="telefon">
+
+        <div id="ekran">
+        <div id="island"></div>
+            <div id="header">
+                <div id="realTime" class="real-time"></div>
+                <div class="densa_strana">
+                    <img src="../img/signal.png" alt="">
+                    <img src="../img/wi-fi.png" alt="">
+                    <img src="../img/full-battery.png" alt="">
+                </div>
+            </div>
+            <div class="overlay" id="overlay" onclick="zatvori_autor();"></div>
+
+            <div id="kontakt">
+                <p id="strelica"> <a href="../index.html">◄</a> </p>
+                <img src="Default_pfp.svg.png" alt="" onclick="otvori_autor();ne_sve(); ne(); zatvori_prozor()">
+                <p onclick="otvori_autor();ne_sve(); ne(); zatvori_prozor()">Goran</p>
+                <a href="../poziv/poziv.html" id="fon_ikonica"><img src="phone-call-white-icon.png" alt=""  onclick="ne_sve(); ne(); zatvori_prozor()"></a>
+                <img src="trash-2-xxl.png" alt="" id="trash_ikonica" onclick="obrisi_sve();ne()">
+            </div>
+            
+
+            <div id="poruke">
+
+            </div>
+            
+            <div id="kucanje" >
+                <input type="text" name="tastaturaInput" id="tastaturaInput" placeholder="Poruka..." onclick="ne_sve(); ne(); zatvori_prozor()">
+                <h1 onclick="otvoriTastaturu(); ne_sve(); ne(); zatvori_prozor()" id="tastaturaUpali" >↑</h1>
+            </div>
+
+            <div id="pravatastarura" onclick="ne_sve(); ne(); zatvori_prozor()">
+                <div class="prviRed">
+                    <div class="taster">Q</div>
+                    <div class="taster">W</div>
+                    <div class="taster">E</div>
+                    <div class="taster">R</div>
+                    <div class="taster">T</div>
+                    <div class="taster">Y</div>
+                    <div class="taster">U</div>
+                    <div class="taster">I</div>
+                    <div class="taster">O</div>
+                    <div class="taster">P</div>
+                </div>
+                <div class="drugiRed">
+                    <div class="taster">A</div>
+                    <div class="taster">S</div>
+                    <div class="taster">D</div>
+                    <div class="taster">F</div>
+                    <div class="taster">G</div>
+                    <div class="taster">H</div>
+                    <div class="taster">J</div>
+                    <div class="taster">K</div>
+                    <div class="taster">L</div>
+                </div>
+                <div class="treciRed">
+                    <div class="taster" id="upper" onclick="upper()">⬆</div>
+                    <div class="taster">Z</div>
+                    <div class="taster">X</div>
+                    <div class="taster">C</div>
+                    <div class="taster">V</div>
+                    <div class="taster">B</div>
+                    <div class="taster">N</div>
+                    <div class="taster">M</div>
+                    <div class="taster" id="backspace">⌫</div>
+                </div>
+                <div class="cetvrtiRed">
+                    <div class="taster" id="brojeviKey" onclick="toggleBrojeve()">123</div>
+                    <div class="taster" id="space">Space</div>
+                    <div class="taster" id="tackica">.</div>
+                    <div class="taster" id="enter" onclick="posalji()">Enter</div>
+                </div>
+
+            </div>
+
+            <div id="izadjiLinija"></div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="obrisi_prozor" class="obrisi">
+        <h1>Da li zelite da obrisete poruku?</h1>
+        <h2 onclick="da()">Da</h2>
+        <h2 onclick="ne()">Ne</h2>
+    </div>
+
+    <div id="obrisi_sve_prozor" class="obrisi">
+        <h1>Da li zelite da obrisete chat?</h1>
+        <h2 onclick="da_sve()">Da</h2>
+        <h2 onclick="ne_sve()">Ne</h2>
+    </div>
+
+    <div id="prazan_chat" class="obrisi">
+        <h3 class="zatvori" onclick="zatvori_prozor()">X</h3>
+        <h1>Chat je trenutno prazan</h1>
+    </div>
+
+    <div id="autor" class="obrisi">
+        <h3 class="zatvori" onclick="zatvori_autor()">X</h3>
+        <h2>O autoru</h2>
+        <p>Zovem se Goran Bašić, imam 19 godina i student sam ITS – Visoke škole strukovnih studija za informacione tehnologije.</p>
+        <p>Ovaj projekat telefona nastao je iz lične radoznalosti i želje da dizajn i funkcionalnost mobilnih aplikacija prikažem kroz web tehnologije.</p>
+        <p>Tokom izrade projekta radio sam na strukturi interfejsa, logici poruka, animacijama i interakciji korisnika, koristeći HTML, CSS i JavaScript.</p>
+        <p>Cilj projekta bio je da kroz samostalni rad unapredim svoje veštine web programiranja, posebno u simulaciji realnih aplikacija, i da stečeno znanje sa fakulteta primenim u praksi.</p>
+    </div>
+
+
+    <script src="poruke.js"></script>
+    
+</body>
+</html>

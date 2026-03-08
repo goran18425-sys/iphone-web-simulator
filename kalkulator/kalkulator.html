@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <a href="../lockscreen/lockscreen.html"><div class="powerBtn" onclick="ukljuci()"></div></a>
+    <div id="telefon">
+
+        <div id="island"></div>
+        <div id="ekran">
+            <div id="header">
+                <div id="realTime" class="real-time"></div>
+                <div class="densa_strana">
+                    <img src="../img/signal.png" alt="">
+                    <img src="../img/wi-fi.png" alt="">
+                    <img src="../img/full-battery.png" alt="">
+                </div>
+            </div>
+            <div class="calc">
+                <input type="text" name="calc_input" id="calc_input" readonly>
+                <div class="tipkiceCalc">
+                    <div class="prviRed">
+                        <div class="calcBroj sivi" id="brisiJedan">⌫</div>
+                        <div class="calcBroj sivi" id="ac">AC</div>
+                        <div class="calcBroj sivi">%</div>
+                        <div class="calcBroj narandzasti znak">÷</div>
+                    </div>
+                    <div class="drugiRed">
+                        <div class="calcBroj broj">7</div>
+                        <div class="calcBroj broj">8</div>
+                        <div class="calcBroj broj">9</div>
+                        <div class="calcBroj narandzasti znak" id="mnozenje">X</div>
+                    </div>
+                    <div class="treciRed">
+                        <div class="calcBroj broj">4</div>
+                        <div class="calcBroj broj">5</div>
+                        <div class="calcBroj broj">6</div>
+                        <div class="calcBroj narandzasti znak">-</div>
+                    </div>
+                    <div class="cetvrtiRed">
+                        <div class="calcBroj broj">1</div>
+                        <div class="calcBroj broj">2</div>
+                        <div class="calcBroj broj">3</div>
+                        <div class="calcBroj narandzasti znak">+</div>
+                    </div>
+                    <div class="petiRed">
+                        <div class="calcBroj" id="negativ">+/-</div>
+                        <div class="calcBroj broj">0</div>
+                        <div class="calcBroj broj">.</div>
+                        <div class="calcBroj narandzasti" id="jednako">=</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div id="izadjiLinija"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="../js/script.js"></script>
+    <script src="kalkulator.js"></script>
+    
+</body>
+</html>

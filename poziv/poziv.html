@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <title>Pozivi</title>
+</head>
+<body>
+    <a href="../lockscreen/lockscreen.html"><div class="powerBtn" onclick="ukljuci()"></div></a>
+    <div id="telefon">
+
+        <div id="island"></div>
+        <div id="ekran">
+            <div id="realTime" class="real-time"></div>
+            <div class="densa_strana">
+                <img src="../img/signal.png" alt="">
+                <img src="../img/wi-fi.png" alt="">
+                <img src="../img/full-battery.png" alt="">
+            </div>
+
+            <div class="overlay" id="overlay" onclick="zatvori_autor();"></div>
+
+            <div class="poziv">
+                <h3 class="zatvori_dial"><a href="../poruke/poruke.html">◄</a></h3>
+                <input type="tel" name="brojTelefona" id="brojTelefona" maxlength="12" readonly>
+                <div class="tipkice">
+                    <div class="prviRed">
+                        <div class="dialBroj" onclick="dodajBroj(this)">1</div>
+                        <div class="dialBroj" onclick="dodajBroj(this)">2</div>
+                        <div class="dialBroj" onclick="dodajBroj(this)">3</div>
+                    </div>
+                    <div class="drugiRed">
+                        <div class="dialBroj" onclick="dodajBroj(this)">4</div>
+                        <div class="dialBroj" onclick="dodajBroj(this)">5</div>
+                        <div class="dialBroj" onclick="dodajBroj(this)">6</div>
+                    </div>
+                    <div class="treciRed">
+                        <div class="dialBroj" onclick="dodajBroj(this)">7</div>
+                        <div class="dialBroj" onclick="dodajBroj(this)">8</div>
+                        <div class="dialBroj" onclick="dodajBroj(this)">9</div>
+                    </div>
+                    <div class="cetvrtiRed">
+                        <div class="dialBroj" onclick="dodajBroj(this)">*</div>
+                        <div class="dialBroj" onclick="dodajBroj(this)">0</div>
+                        <div class="dialBroj" onclick="dodajBroj(this)">+</div>
+                    </div>
+                    <div class="petiRed">
+                        <div class="dialBroj" id="pozovi">
+                            <img src="phone-call-white-icon.png" alt="">
+                            
+                        </div>
+                        <div class="dialBroj" id="obrisi_broj" onclick="obrisi_br()">⌫</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="izadjiLinija" onclick="ekranUpaljen()"></div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="poziv.js"></script>
+    
+</body>
+</html>
