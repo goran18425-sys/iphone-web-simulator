@@ -59,6 +59,8 @@ The project simulates a phone with a lock screen, home screen and several workin
 
 Software engineering student at ITS
 
+## Screenshots
+
 <img width="1000" height="1000" alt="Screenshot from 2026-03-08 17-10-02" src="https://github.com/user-attachments/assets/2ba5cf02-c274-49ed-897a-ccfb26a17763" />
 <img width="1000" height="1000" alt="Screenshot from 2026-03-08 17-10-24" src="https://github.com/user-attachments/assets/0157994a-d739-41af-88c6-2bf25dfeb73d" />
 <img width="1000" height="1000" alt="Screenshot from 2026-03-08 17-11-17" src="https://github.com/user-attachments/assets/7900a417-a408-4322-9c0c-7757b7b3abcb" />
